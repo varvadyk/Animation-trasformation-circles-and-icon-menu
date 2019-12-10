@@ -2,10 +2,82 @@
 body {
   background:#E9E6D8; 
 }
+.wrapper {
+  margin-top: 25%;
+  margin-left: 35%;
+  }                           /*icon menu*/
+.menu-conteiner{
+ position: relative;
+ top: -60px;
+ left: 16px;
+}
+.menu-block{
+    left:15%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin: -35px auto 0 3.2px;
+    -webkit-transition: margin 600ms;
+    -moz-transition: margin 600ms;
+    transition: margin 600ms;
+    cursor: pointer;
+}
+
+.menu-block .menu-item {
+    display: block;
+    width: 60px;
+    height: 3.2px;
+    margin: 14px;
+    border-right: 45px solid #fff;
+    border-left: 10px solid #d6d6d6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+    -moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+    transition-property: transform, margin, border-right-color, box-shadow;
+
+}
+    .menu-block .one-line {
+        -webkit-transition: opacity 300ms;
+        -moz-transition: opacity 300ms;
+        transition: opacity 300ms;
+    }
+   .menu-block .two-line {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+  .menu-block:hover .menu-item {
+  transition: all 0.1s ease-in;
+}
+.menu-block:hover .one-line,
+.menu-block:active .one-line {
+  transition: all 0.1s linear;
+  opacity: 0;
+}
+.menu-block:hover .two-line {
+  transform: rotate(45deg) translate(-5px, 5px);
+  box-shadow: 0px 0px 3px 3px rgba(205,40,44,0.75);
+  border-radius: 10px;
+}
+.menu-block:hover .three-line {
+  transform: rotate(-45deg) translate(5px, -20px);
+  box-shadow: 0px 0px 3px 3px rgba(83,228,68,0.65);
+  border-radius: 10px;
+}
+.menu-block:active:hover .bar:not:.one-line {
+  transition: all 0.01s ease-in;
+  opacity: 0.5;
+}
+
+
+                            /* circles*/
 .container {
  position: absolute;
- top:50%;
- left:30%;
+ 
 }
 .circle-wave{
     display: flex;
